@@ -7,7 +7,9 @@ let opt = document.getElementById("output");
 
 window.promises = [new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))}),
 				  new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))}),
-				  new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))})];
+				  new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))}),
+				  new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))}),
+				  new Promise((resolve)=>{resolve(Math.floor(Math.random() * (5 - 1) + 1))}),];
 
 
 Promise.any(window.promises).then((data)=>{
